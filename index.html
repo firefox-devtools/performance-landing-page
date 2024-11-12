@@ -37,6 +37,10 @@
         margin: auto;
       }
 
+      .font-larger {
+        font-size: 1.15rem;
+      }
+
       h1 {
         font-family: monospace;
         font-size: 1.5rem;
@@ -82,12 +86,17 @@
       ul {
         padding: 0;
         margin: 2rem 0;
-        list-style: none;
+        font-size: 0.9em;
+        list-style: inside "👉  ";
       }
 
       li {
         margin: 0.8rem 0;
         padding: 0;
+      }
+
+      li:marker {
+        font-size: 0.9rem;
       }
 
       a {
@@ -108,7 +117,7 @@
       <span class="title-performance">performance</span
       ><span class="title-dot">.</span><span class="title-sync">sync()</span>
     </h1>
-    <p>Thanks for attending!</p>
+    <p class="font-larger">Thanks for attending!</p>
     <ul>
       <li><a href="https://lu.ma/z1qt2a63">Consult this event's agenda</a></li>
       <li>
