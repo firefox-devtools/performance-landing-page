@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    <title>performance.sync() 2024</title>
+    <style type="text/css" media="all">
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: sans-serif;
+        font-size: 50px;
+        background: linear-gradient(#7b1604, #e25821);
+        color: #fff4de;
+        min-height: 100%;
+        display: flex;
+      }
+
+      body {
+        margin-inline: auto;
+        padding: 1rem 2rem;
+      }
+
+      .horizontally-center {
+        text-align: center;
+        margin: auto;
+      }
+
+      .title-performance {
+        font-family: monospace;
+        font-style: italic;
+        font-weight: normal;
+        color: #cc9eff;
+      }
+
+      .title-dot {
+        font-family: monospace;
+        font-weight: bold;
+      }
+
+      .title-sync {
+        font-family: monospace;
+        font-weight: bold;
+        border: 0.2rem solid currentColor;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+      }
+
+      .firefox-logo {
+        background: white;
+        display: inline-block;
+        padding: 1rem;
+        margin: 2rem;
+        border-radius: 0.5rem;
+        transition: 100ms background-color;
+      }
+
+      .firefox-logo:hover,
+      .firefox-logo:active {
+        background-color: #ffd6b2;
+      }
+
+      ul {
+        padding: 0;
+        margin: 1rem 0;
+        list-style: none;
+      }
+
+      li {
+        margin: 0.5rem 0;
+        padding: 0;
+      }
+
+      a {
+        color: #ffea7f;
+      }
+
+      a:hover,
+      a:active {
+        color: #ffffcd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="title-performance">performance</span
+      ><span class="title-dot">.</span><span class="title-sync">sync()</span>
+    </h1>
+    <p>Thanks for attending!</p>
+    <ul>
+      <li><a href="https://lu.ma/z1qt2a63">Consult this event's agenda</a></li>
+      <li>
+        <a href="https://profiler.firefox.com/docs/"
+          >Learn more about the Firefox Profiler</a
+        >
+      </li>
+      <li>
+        <a href="https://blog.mozilla.org/performance/"
+          >Visit the Mozilla Performance Blog</a
+        >
+      </li>
+      <li>
+        <a href="https://www.mozilla.org/firefox/new/">Download Firefox!</a>
+      </li>
+    </ul>
+    <p class="horizontally-center">
+      <a
+        href="https://www.mozilla.org/firefox/new/"
+        title="Download Firefox"
+        class="firefox-logo"
+        ><img
+          src="./assets/dist/firefox_by_mozilla.svg"
+          alt="Firefox by Mozilla"
+      /></a>
+    </p>
+  </body>
+</html>
