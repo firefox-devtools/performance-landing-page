@@ -20,7 +20,7 @@
 
       html {
         font-family: "Metropolis", sans-serif;
-        font-size: 50px;
+        font-size: clamp(1rem, 4vw, 3rem);
         background: linear-gradient(#7b1604, #e25821);
         color: #fff4de;
         min-height: 100%;
@@ -37,20 +37,23 @@
         margin: auto;
       }
 
-      .title-performance {
+      h1 {
         font-family: monospace;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+      }
+
+      .title-performance {
         font-style: italic;
         font-weight: normal;
         color: #cc9eff;
       }
 
       .title-dot {
-        font-family: monospace;
         font-weight: bold;
       }
 
       .title-sync {
-        font-family: monospace;
         font-weight: bold;
         border: 0.2rem solid currentColor;
         border-radius: 0.5rem;
@@ -64,6 +67,12 @@
         margin: 2rem;
         border-radius: 0.5rem;
         transition: 100ms background-color;
+        max-width: 50vw;
+        width: 20rem;
+      }
+
+      .firefox-logo img {
+        width: 100%;
       }
 
       .firefox-logo:hover,
@@ -73,7 +82,7 @@
 
       ul {
         padding: 0;
-        margin: 1rem 0;
+        margin: 2rem 0;
         list-style: none;
       }
 
