@@ -21,13 +21,21 @@
       html {
         font-family: "Metropolis", sans-serif;
         font-size: clamp(1rem, 4vw, 3rem);
-        background: linear-gradient(#7b1604, #e25821);
         color: #fff4de;
         min-height: 100%;
-        display: flex;
+        background: #20123a;
+        margin: 0;
+        padding: 0;
       }
 
       body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+      }
+
+      .content {
         margin-inline: auto;
         padding: 1rem 2rem;
       }
@@ -44,7 +52,10 @@
       h1 {
         font-family: monospace;
         font-size: 1.5rem;
-        margin-bottom: 1em;
+        margin: 0;
+        padding: 1em 0;
+        text-align: center;
+        background: black;
       }
 
       .title-performance {
@@ -117,38 +128,42 @@
       <span class="title-performance">performance</span
       ><span class="title-dot">.</span><span class="title-sync">sync()</span>
     </h1>
-    <p class="font-larger">Thanks for attending!</p>
-    <ul>
-      <li><a href="https://lu.ma/z1qt2a63">Consult this event's agenda</a></li>
-      <li>
+    <div class="content">
+      <p class="font-larger">Thanks for attending!</p>
+      <ul>
+        <li>
+          <a href="https://lu.ma/z1qt2a63">Consult this event's agenda</a>
+        </li>
+        <li>
+          <a
+            href="https://chromewebstore.google.com/detail/firefox-profiler/ljmahpnflmbkgaipnfbpgjipcnahlghn"
+            >Install the Firefox Profiler add-on for Chrome</a
+          >
+        </li>
+        <li>
+          <a href="https://profiler.firefox.com/docs/"
+            >Learn more about the Firefox Profiler</a
+          >
+        </li>
+        <li>
+          <a href="https://blog.mozilla.org/performance/"
+            >Visit the Mozilla Performance Blog</a
+          >
+        </li>
+        <li>
+          <a href="https://www.mozilla.org/firefox/new/">Download Firefox!</a>
+        </li>
+      </ul>
+      <p class="horizontally-center">
         <a
-          href="https://chromewebstore.google.com/detail/firefox-profiler/ljmahpnflmbkgaipnfbpgjipcnahlghn"
-          >Install the Firefox Profiler add-on for Chrome</a
-        >
-      </li>
-      <li>
-        <a href="https://profiler.firefox.com/docs/"
-          >Learn more about the Firefox Profiler</a
-        >
-      </li>
-      <li>
-        <a href="https://blog.mozilla.org/performance/"
-          >Visit the Mozilla Performance Blog</a
-        >
-      </li>
-      <li>
-        <a href="https://www.mozilla.org/firefox/new/">Download Firefox!</a>
-      </li>
-    </ul>
-    <p class="horizontally-center">
-      <a
-        href="https://www.mozilla.org/firefox/new/"
-        title="Download Firefox"
-        class="firefox-logo"
-        ><img
-          src="./assets/dist/firefox_by_mozilla.svg"
-          alt="Firefox by Mozilla"
-      /></a>
-    </p>
+          href="https://www.mozilla.org/firefox/new/"
+          title="Download Firefox"
+          class="firefox-logo"
+          ><img
+            src="./assets/dist/firefox_by_mozilla.svg"
+            alt="Firefox by Mozilla"
+        /></a>
+      </p>
+    </div>
   </body>
 </html>
