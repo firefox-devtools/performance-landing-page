@@ -122,6 +122,54 @@
       a:active {
         color: #ffffcd;
       }
+
+      /* Schedule styles */
+      .schedule-section {
+        padding: 1rem 0;
+        margin: 2rem 0;
+      }
+
+      .schedule-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .schedule-item {
+        display: flex;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+      }
+
+      .schedule-time {
+        flex-shrink: 0;
+        width: 3rem;
+        font-weight: bold;
+        color: #ffea7f;
+        margin-right: 0.8rem;
+      }
+
+      .schedule-event {
+        flex: 1;
+        color: #fff4de;
+      }
+
+      .schedule-speaker {
+        display: block;
+        font-size: 0.6rem;
+        color: #cc9eff;
+        margin-top: 0.2rem;
+      }
+
+      .schedule-break {
+        font-weight: bold;
+        color: #fea365;
+      }
+
+      .schedule-special {
+        font-weight: bold;
+        color: #ffea7f;
+      }
     </style>
   </head>
   <body>
@@ -131,6 +179,89 @@
       <span class="title-bold">Performance</span>
     </h1>
     <div class="content">
+      <!-- perf.sync Schedule -->
+      <div class="schedule-section">
+        <p class="font-larger">performance.sync() Schedule:</p>
+        <ul class="schedule-list">
+          <li class="schedule-item">
+            <span class="schedule-time">18:45</span>
+            <span class="schedule-event schedule-special">Doors open</span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">19:30</span>
+            <span class="schedule-event">
+              7 Levels of a Web Performance Journey
+              <span class="schedule-speaker">Sergey Chernyshev</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">19:45</span>
+            <span class="schedule-event">
+              Improving Web Responsiveness - Interactivity improvements from real-world cases
+              <span class="schedule-speaker">Andrea Verlicchi - Speed Kit</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">20:00</span>
+            <span class="schedule-event">
+              Noise-Cancelling RUM: Key Insights from Our Anomaly Detection Journey
+              <span class="schedule-speaker">Brian Ramirez - Speed Kit</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">20:15</span>
+            <span class="schedule-event">
+              Speculation Rules in a Nutshell
+              <span class="schedule-speaker">Medhat Dawoud - Miro</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">20:30</span>
+            <span class="schedule-event schedule-break">Break</span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">20:45</span>
+            <span class="schedule-event">
+              Compression Dictionaries: Early Findings
+              <span class="schedule-speaker">Robin Marx - Akamai</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">21:00</span>
+            <span class="schedule-event">
+              Using Model Context Protocol (MCP) to let your AI agent debug performance issues
+              <span class="schedule-speaker">Michael Hablich - Google Chrome</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">21:15</span>
+            <span class="schedule-event">
+              Peak Performance with Partytown: Tackling the 3rd party challenge in big enterprises - A Case Study
+              <span class="schedule-speaker">Julian Jandl - Push-Based</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">21:30</span>
+            <span class="schedule-event">
+              A New Approach for Cross-Browser Testing: A Community-First Approach
+              <span class="schedule-speaker">Mike Kozicki - Cloudflare</span>
+            </span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">21:45</span>
+            <span class="schedule-event schedule-special">Interactive session</span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">22:15</span>
+            <span class="schedule-event schedule-special">Social time</span>
+          </li>
+          <li class="schedule-item">
+            <span class="schedule-time">00:00</span>
+            <span class="schedule-event schedule-special">Doors close</span>
+          </li>
+        </ul>
+      </div>
+
       <p class="font-larger">Here are a few links for you:</p>
       <ul>
         <li>
